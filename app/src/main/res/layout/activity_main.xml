@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/Light_Blue">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/Hearts_layout"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_heart1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/heart"
+            />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_heart2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/heart"
+            />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_heart3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/heart"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--com.google.android.material.textview.MaterialTextView
+        android:id="@+id/timer_LBL_time"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/Hearts_layout"
+        android:text="TextView" /-->
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/main_FAB_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:icon="@drawable/left"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="110dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/main_FAB_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:icon="@drawable/right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/right_BTN_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/Game_Map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/Hearts_layout"
+        android:layout_above="@id/right_BTN_Layout">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/Left_Trial"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/R0_C0"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/missile"
+            />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R1_C0"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                app:srcCompat="@drawable/missile"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R2_C0"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                app:srcCompat="@drawable/missile"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R3_C0"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                app:srcCompat="@drawable/missile"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R4_C0"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                app:srcCompat="@drawable/missile"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R5_C0"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                app:srcCompat="@drawable/missile"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R6_C0"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                app:srcCompat="@drawable/missile"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R7_C0"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                app:srcCompat="@drawable/plain2"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/Center_Trial"
+        android:layout_width="135dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_toRightOf="@id/Left_Trial"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/R0_C1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/missile"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/R1_C1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/missile"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/R2_C1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/missile"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/R3_C1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/missile"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/R4_C1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/missile"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/R5_C1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/missile"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/R6_C1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/missile"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/R7_C1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/plain2"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/Right_Trial"
+        android:layout_width="135dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_toRightOf="@id/Center_Trial"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/R0_C2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/missile"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/R1_C2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/missile"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/R2_C2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/missile"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/R3_C2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/missile"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/R4_C2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/missile"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/R5_C2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/missile"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/R6_C2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/missile"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/R7_C2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/plain2"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</RelativeLayout>
